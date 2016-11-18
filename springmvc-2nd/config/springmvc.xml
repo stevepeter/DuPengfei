@@ -10,16 +10,16 @@
 	<!-- 配置controller扫描包 -->
 	<context:component-scan base-package="cn.itcast.ssm.controller" />
 	<!-- 配置注解驱动 -->
-	<mvc:annotation-driven conversion-service="conversionService" />
-
-	<bean id="conversionService"
+	<mvc:annotation-driven />
+	<!-- conversion-service="conversionService" -->
+	<!-- <bean id="conversionService"
 		class="org.springframework.format.support.FormattingConversionServiceFactoryBean">
 		<property name="converters">
 			<set>
 				<bean class="cn.itcast.ssm.ItemConverter"></bean>
 			</set>
 		</property>
-	</bean>
+	</bean> -->
 
 	<bean
 		class="org.springframework.web.servlet.view.InternalResourceViewResolver">
